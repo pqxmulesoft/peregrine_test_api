@@ -11,8 +11,8 @@ curl  http://localhost:8080/organizations/1/gateways
 ### get gateway in a specific organization "1" with gateway Id "QmG"
 curl  http://localhost:8080/organizations/"1"/gateways/QmG
 
-### modify an existing gateway in organization "1" with gateway Id "QmG".
-### Or create a new gateway if that id doesn't exist.
+### modify an existing gateway in organization "1" with gateway Id "QmG".<br />
+ Or create a new gateway if that id doesn't exist.
 curl -X PUT localhost:8080/organizations/1/gateways/QmG -H 'Content-type:application/json' -d '{"type":"new","name":"api","version":"1.0.4"}'
 
 ### delete a gateway in a specific organization "1" with gateway Id "QmG".
